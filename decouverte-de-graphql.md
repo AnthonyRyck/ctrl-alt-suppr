@@ -61,7 +61,9 @@ Il faut ajouter les packages suivant.
 dotnet add .\TutoGraphQL package HotChocolate.AspNetCore
 dotnet add .\TutoGraphQL package HotChocolate.Data
 ```
-* `HotChocolate.AspNetCore` contient le middleware GraphQL ASP.NET Core pour Hot Chocolate. De plus, ce package comprend le middleware [Banana Cake Pop](https://chillicream.com/docs/bananacakepop/getting-started), qui fournit un IDE GraphQL (c’est l’IDE sur l’exemple que j’ai mis en live). Cela permet de tester des requêtes.  /r/n* `HotChocolate.Data` contient des extensions prêtes à l’emploi pour la gestion des données dans HotChocolate (filtrage, projections et tri).  /r/n### Ajout du schéma GraphQL
+* `HotChocolate.AspNetCore` contient le middleware GraphQL ASP.NET Core pour Hot Chocolate. De plus, ce package comprend le middleware [Banana Cake Pop](https://chillicream.com/docs/bananacakepop/getting-started), qui fournit un IDE GraphQL (c’est l’IDE sur l’exemple que j’ai mis en live). Cela permet de tester des requêtes.  
+* `HotChocolate.Data` contient des extensions prêtes à l’emploi pour la gestion des données dans HotChocolate (filtrage, projections et tri).  
+### Ajout du schéma GraphQL
 
 Le schéma GraphQL est défini par des entités. Dans notre cas, se seront `Personne` et `Friend`.  
 ```csharp
@@ -200,7 +202,9 @@ namespace WebApiGraphQl.RequetesGraph
 ```
 
 J’exposse 2 méthodes pour interroger les données.  
-* `GetPersonnesAsync()` retourne l’ensemble des personnes, et il a les attributs `[UseSorting]` qui permet d’indique un classement ([doc Sorting](https://chillicream.com/docs/hotchocolate/fetching-data/sorting)), et `[UseFiltering]` qui permet de filtrer ([doc Filtering](https://chillicream.com/docs/hotchocolate/fetching-data/filtering)).  /r/n* La 2eme méthode donne une personne en fonction de l’id passé en paramètre.  /r/n### Configuration du serveur
+* `GetPersonnesAsync()` retourne l’ensemble des personnes, et il a les attributs `[UseSorting]` qui permet d’indique un classement ([doc Sorting](https://chillicream.com/docs/hotchocolate/fetching-data/sorting)), et `[UseFiltering]` qui permet de filtrer ([doc Filtering](https://chillicream.com/docs/hotchocolate/fetching-data/filtering)).  
+* La 2eme méthode donne une personne en fonction de l’id passé en paramètre.  
+### Configuration du serveur
 
 Il faut ajouter dans Program.cs les middlewares à notre serveur. Voici le code complet de `Program.cs`.  
 ```csharp

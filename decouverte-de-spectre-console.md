@@ -210,8 +210,10 @@ void ShowPosts()
 
 Qu’est ce qui est important.  
 * <code data-enlighter-language="csharp" class="EnlighterJSRAW">selection = AnsiConsole.Ask<string>("Quel est votre choix ?");</code>  
-Il remplace `Console.ReadLine();` ou `Console.ReadKey();`, et la sortie peut être directement typé.  /r/n* `AnsiConsole.MarkupLine("See you soon " + Emoji.Known.OkHand);`  
-[MarkupLine](https://spectreconsole.net/markup) équivaut à `AnsiConsole.Write(new Markup("....."));` Je vous laisse lire la doc pour lui, car il permet de changer de couleur le texte, souligner, mettre des [emojis](https://spectreconsole.net/appendix/emojis),… enfin c’est lui qui rend la vie plus be  /r/n
+Il remplace `Console.ReadLine();` ou `Console.ReadKey();`, et la sortie peut être directement typé.  
+* `AnsiConsole.MarkupLine("See you soon " + Emoji.Known.OkHand);`  
+[MarkupLine](https://spectreconsole.net/markup) équivaut à `AnsiConsole.Write(new Markup("....."));` Je vous laisse lire la doc pour lui, car il permet de changer de couleur le texte, souligner, mettre des [emojis](https://spectreconsole.net/appendix/emojis),… enfin c’est lui qui rend la vie plus be  
+
 Pour changer la couleur : `AnsiConsole.MarkupLine("[red]quit[/] : pour quitter.");`   
 Spectre va *parser* la chaine de string. Par exemple, pour avoir du rouge il faut écrire : `[red]` et ne **PAS OUBLIER** le `[/]` pour indiquer la fin, sinon **Exception**. Comme c’est dans une chaine de string, votre IDE ne va pas vous aider à trouver l’erreur.  
 
