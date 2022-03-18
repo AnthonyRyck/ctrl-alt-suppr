@@ -6,9 +6,10 @@ Fatigué d’avoir à faire des *end points* en masse, pour avoir un type de ret
 
 GraphQL est là pour vous simplifier la vie.  
 ## Qu’est-ce que GraphQL
-<blockquote class="wp-block-quote">
-**GraphQL** (pour **Graph Query Language**) est un langage de requêtes et un environnement d’exécution, créé par Facebook en 2012, avant d’être publié comme projet open-source en 2015. Inscrit dans le modèle Client-Serveur, il propose une alternative aux API REST. La requête du client définit une structure de données, dont le stockage est éventuellement distribué, et le serveur suit cette structure pour retourner la réponse. Fortement typé, ce langage évite les problèmes de retour de données insuffisants (*under-fetching*) ou surnuméraires (*over-fetching*).  
-<cite>[GraphQL — Wikipédia (wikipedia.org)](https://fr.wikipedia.org/wiki/GraphQL)</cite></blockquote>## Projet de test
+>**GraphQL** (pour **Graph Query Language**) est un langage de requêtes et un environnement d’exécution, créé par Facebook en 2012, avant d’être publié comme >projet open-source en 2015. Inscrit dans le modèle Client-Serveur, il propose une alternative aux API REST. La requête du client définit une structure de données, dont >le stockage est éventuellement distribué, et le serveur suit cette structure pour retourner la réponse. Fortement typé, ce langage évite les problèmes de retour de >données insuffisants (*under-fetching*) ou surnuméraires (*over-fetching*).  
+[GraphQL — Wikipédia (wikipedia.org)](https://fr.wikipedia.org/wiki/GraphQL)  
+
+## Projet de test
 
 Le code source du projet est sur [GitHub](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/TutoGraphQL), et j’ai mis un live de la demo sur : [graphql-tuto.ctrl-alt-suppr.dev](https://graphql-tuto.ctrl-alt-suppr.dev/).  
 Dans ce post je vais utiliser le package [HotChocolate.AspNetCore](https://www.nuget.org/packages/HotChocolate.AspNetCore/) de [ChilliCream](https://chillicream.com/).   
