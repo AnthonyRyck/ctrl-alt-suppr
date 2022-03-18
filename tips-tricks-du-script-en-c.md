@@ -9,7 +9,679 @@ Bref, il y a du pour et du contre.
 
 Pour le post, je suis en .NET 6, mais ça fonctionne aussi en .NET 5. Il faut utiliser la commande `dotnet tool install`, comme ci-dessous :  
 ```generic
-dotnet tool install -g dotnet-script
+>dotnet tool install -g dotnet-script</pre>
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```generic
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```json
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```csharp
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```generic
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```csharp
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```generic
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```csharp
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```generic
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```csharp
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```json
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```generic
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```csharp
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```generic
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+```generic
+>La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+```xml
+>dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-s
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
 ```
 
 La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
@@ -17,40 +689,1489 @@ La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .N
 
 L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
 Faire la commande dans un répertoire :  
-```generic
-dotnet-script init
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
 ```
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="">
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-s
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
 
 Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
-```json
-{
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-s
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-su
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nu
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cib
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nug
+```
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlight
+```
+
+La dernière version à ce jour de l’article est la 1.3.1. Si vous êtes en .NET 5 c’est la version 1.0, pour le .NET 6 la version commence à 1.3.  
+## Utilisation
+
+L’outil permet de créer un script et un « environnement » dans le cas d’une utilisation avec Visual Studio Code et omnisharp (l’extension C#).   
+Faire la commande dans un répertoire :  
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet-script init</pre><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+
+Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">{
   "script": {
     "enableScriptNuGetReferences": true,
     "defaultTargetFramework": "net6.0"
   }
-}
-```
-
+}</pre>
 Dans un script il n’y a pas de méthode `Main`. Commençons avec un simple `Console.WriteLine`.  
-```csharp
-Console.WriteLine("Le fameux Hello World !");
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">Console.WriteLine("Le fameux Hello World !");
 Console.WriteLine(">Appuyer sur une touche pour continuer.");
-Console.ReadKey();
-```
-
+Console.ReadKey();</pre>
 Pour exécuter un script, il faut faire la commande :  
-```generic
-#dotnet-script nomDuFichier.csx // ou dotnet script (sans le "-")
-dotnet-script main.csx
-```
-#### Référence à d’autres scripts
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#dotnet-script nomDuFichier.csx // ou dotnet script (sans le "-")
+dotnet-script main.csx</pre>#### Référence à d’autres scripts
 
 Tout mettre dans un script, ça peut faire beaucoup, et aussi en tant que dév nous aimons écrire une fois les choses, et surtout les réutiliser. Il est possible de charger un script, dans un script.   
 Il faut utiliser le mot clé : `#load "nomdufichier.csx".`   
 Prenons un exemple simple. Ajoutons dans le répertoire un nouveau script : `ConsoleExtension.csx`. En voici le code :  
-```csharp
-public static void Info(string message)
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">public static void Info(string message)
 {
 	ForegroundColor = ConsoleColor.White;
 	Console.WriteLine(message);
@@ -77,17 +2198,11 @@ public static void Pause()
 public static void SautDeLigne()
 {
 	Info(string.Empty);
-}
-```
-
+}</pre>
 J’ajouter la référence :  
-```generic
-#load "ConsoleExtension.csx"
-```
-
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#load "ConsoleExtension.csx"</pre>
 Ajoutons ça au script `main.csx`.  
-```csharp
-#load "ConsoleExtension.csx"
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#load "ConsoleExtension.csx"
 
 Console.WriteLine("Le fameux Hello World !");
 Console.WriteLine(">Appuyer sur une touche pour continuer.");
@@ -98,28 +2213,22 @@ Title("Utilisation d'un autre script");
 Pause();
 Info("Il est possible d'utiliser un autre fichier script en utilisant");
 Result("#load \"nomdufichier.csx\"");
-SautDeLigne();
-```
-
+SautDeLigne();</pre>
 Là j’ai utilisé des méthodes `static`, mais ça peut être des `class` pour définir des objets. Tout le champ des possibilités du C# est utilisable.  
-<img src="https://media.giphy.com/media/3o84sq21TxDH6PyYms/giphy.gif" alt="">
+<img src="https://media.giphy.com/media/3o84sq21TxDH6PyYms/giphy.gif" alt="" />
 #### Utilisation de Nuget
 
 C’est bien beau d’ajouter du code dans son script, mais bon je ne vais pas tout réinventer, je veux pouvoir utiliser des packages sur nuget… ou… de nuget ! (***sur** ou **de** ?*)   
 Et c’est possible ! C’est là que le script devient une machine de guerre. Pour utiliser un package il faut mettre dans le script :  
-```generic
-#r "nuget: nomDuPackage, version"
-```
-
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#r "nuget: nomDuPackage, version"</pre>
 On retrouve la commande sur le site de nuget pour un package.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/05-dotnetscript-nuget.png" alt="">
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/05-dotnetscript-nuget.png" alt="" />
 
 **Note** : A chaque ajout d’un package avec la commande, il faut redémarrer l’extension Omnisharp (C#), pour que l’intellisense soit prise en charge pour l’ajout. (CTRL+SHIFT+P –> omnisharp)  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/04-dotnetscript-Omnisharp-Reset.png" alt="">
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/04-dotnetscript-Omnisharp-Reset.png" alt="" />
 
 Je vais prendre un exemple de package : [AlienFruit.FluentConsole.AsciiArt](https://www.nuget.org/packages/AlienFruit.FluentConsole.AsciiArt/). Il permet de faire du ACSII Art. Ajoutons tout ça dans le script `main.csx`, et je mets le script au complet.  
-```csharp
-#load "ConsoleExtension.csx"
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#load "ConsoleExtension.csx"
 #r "nuget: AlienFruit.FluentConsole.AsciiArt, 1.0.10"
 using AlienFruit.FluentConsole.AsciiArt;
 using AlienFruit.FluentConsole;
@@ -147,33 +2256,24 @@ Info("Exemple :");
 FConsole.GetInstance().DrawDemo(DemoPicture.RainbowPukeSkull);
 SautDeLigne();
 
-Info("Voilà, à vos Script !");
-```
-
+Info("Voilà, à vos Script !");</pre>
 Il faut que les instructions `#load` et `#r` soient **TOUJOURS** en haut du script.  
-<img src="https://media.giphy.com/media/YAlhwn67KT76E/giphy.gif" alt="">
+<img src="https://media.giphy.com/media/YAlhwn67KT76E/giphy.gif" alt="" />
 
 **Attention** : Si dans Visual Studio Code après avoir ajouté un package nuget, VS vous met tout en erreur, j’ai eu la même chose. C’est un problème de version entre `dotnet-script` et `Omnisharp` ([issue sur Github](https://github.com/OmniSharp/omnisharp-roslyn/issues/2020)).   
 Pour cela il faut modifier le fichier de config de l’extension.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/02-dotnetscript-Omnisharp.png" alt="">
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/03-dotnetscript-Omnisharp.png" alt="">
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/02-dotnetscript-Omnisharp.png" alt="" />
+<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/03-dotnetscript-Omnisharp.png" alt="" />
 
 Il faut ajouter à la fin du fichier de config :  
-```json
-"omnisharp.path":"latest"
-```
-
+<pre class="EnlighterJSRAW" data-enlighter-language="json" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">"omnisharp.path":"latest"</pre>
 Omnisharp va se remettre à jour pour utiliser la dernière version du serveur. Faire un redémarrage de VS Code.  
 #### Petit bonus
 
 Le petit bonus que je trouve cool, c’est qu’il est possible d’exécuter un script sans l’avoir en local ([remote-scripts](https://github.com/filipw/dotnet-script#remote-scripts)). Comme avec mon exemple :  
-```generic
-dotnet script --no-cache https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/dotNetScript/ScriptViaWeb.csx
-```
-
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">dotnet script --no-cache https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/dotNetScript/ScriptViaWeb.csx</pre>
 Voici à quoi ressemble le script  
-```csharp
-#load "nuget:ConsoleExtensionScript, 1.0.0"
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#load "nuget:ConsoleExtensionScript, 1.0.0"
 #r "nuget: AlienFruit.FluentConsole.AsciiArt, 1.0.10"
 using AlienFruit.FluentConsole.AsciiArt;
 using AlienFruit.FluentConsole;
@@ -186,47 +2286,36 @@ FConsole.GetInstance().DrawDemo(DemoPicture.Punisher);
 SautDeLigne();
 
 Info("Voilà, à vos Script !");
-Pause();
-```
-
+Pause();</pre>
 Pour les scripts en remote, je conseille d’utiliser l’option `--no-cache`, ça force l’outil à reprendre le script à chaque fois, sinon il va rester bloqué sur son cache (*oui ça sent le vécu…*). S’il y a des modifications, comme il reste sur le cache, vous ne les verrez pas.  
 Ensuite avec un script qui n’est pas en local, vous ne pouvez pas faire de référence à d’autres scripts à distance (`#load "nomFichier.csx"`), SAUF quand ils sont exportés sur nuget.org. Il est possible de créer [nos packages de script](https://github.com/filipw/dotnet-script#script-packages), et du coup il faut utiliser :  
-```generic
-#load "nuget:packageName, version"
-#load "nuget:ConsoleExtensionScript, 1.0.0"
-```
-#### Création d’un package nuget avec un csx
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#load "nuget:packageName, version"
+#load "nuget:ConsoleExtensionScript, 1.0.0"</pre>#### Création d’un package nuget avec un csx
 
 Pour l’exemple j’ai créé un package script [ConsoleExtensionScript](https://www.nuget.org/packages/ConsoleExtensionScript/1.0.0).  
 Comment procéder. Créer un fichier nuspec à la « racine ».  
-```generic
-#nuget spec NomDuPackageVoulu
-nuget spec ConsoleExtensionScript
-```
-
+<pre class="EnlighterJSRAW" data-enlighter-language="generic" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">#nuget spec NomDuPackageVoulu
+nuget spec ConsoleExtensionScript</pre>
 Le fichier nuspec pour mon package ConsoleExtensionScript ressemble à ça.  
-```xml
-<?xml version="1.0" encoding="utf-8"?>
-<package>
+<pre class="EnlighterJSRAW" data-enlighter-language="xml" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group=""><?xml version="1.0" encoding="utf-8"?>
+<package >
   <metadata>
     <id>ConsoleExtensionScript</id>
     <version>1.0.0</version>
     <authors>Anthony Ryck</authors>
-    <requirelicenseacceptance>false</requirelicenseacceptance>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <license type="expression">MIT</license>
-    <projecturl>https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNetScript</projecturl>
+    <projectUrl>https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNetScript</projectUrl>
     <description>Pour montrer comment utiliser un package dans un script C#</description>
-    <releasenotes></releasenotes>
+    <releaseNotes></releaseNotes>
     <copyright>Copyright Anthony Ryck 2022</copyright>
     <tags>csx</tags>
   </metadata>
   
   <files>
-    <file src="contentFiles/csx/netstandard2.0/main.csx" target="contentFiles/csx/netstandard2.0/main.csx"></file>
+    <file src="contentFiles/csx/netstandard2.0/main.csx" target="contentFiles/csx/netstandard2.0/main.csx" />
   </files>
-</package>
-```
-
+</package></pre>
 Ensuite le ou les fichiers `csx` doivent être mis en `target` dans un ordre de répertoire : `/contentFiles/csx/netstandard2.0` et notre*/nos* fichier « main.csx ».   
 Je vous invite à lire le post : [NuGet ContentFiles Demytified](https://devblogs.microsoft.com/nuget/nuget-contentfiles-demystified/) et la [doc MS sur contentFiles](https://docs.microsoft.com/fr-fr/nuget/reference/nuspec#including-content-files), ils expliquent le pourquoi du nommage des répertoires.  
 ## Conclure

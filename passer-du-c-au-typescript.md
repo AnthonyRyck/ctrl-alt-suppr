@@ -4,7 +4,7 @@ Quand on commence un nouveau langage, une nouvelle techno, nous cherchons toujou
 ## Qu’est-ce que TypeScript ? 
 
 TypeScript est un langage open source développé et maintenu par Microsoft ([github source](https://github.com/microsoft/TypeScript)), sous licence Apache 2. Il s’agit d’un « sur-ensemble » (*super set*) typé de Javascript qui se « compile » en JavaScript brut. Je mets des guillemets pour compiler, car ce n’est pas une compilation comme en C#, mais une transpilation (*[transpiler](https://fr.wiktionary.org/wiki/transpiler)*) du code TypeScript en code Javascript.  
-<img src="https://media.giphy.com/media/3KC2jD2QcBOSc/giphy.gif" alt="">
+<img src="https://media.giphy.com/media/3KC2jD2QcBOSc/giphy.gif" alt="" />
 
 La commande pour « compiler » un fichier TypeScript en javascript est :   
 `tsc nomDuFichier.ts`.   
@@ -16,7 +16,7 @@ JavaScript est un langage dynamiquement typé. Cette caractéristique, qui facil
 Je vais mettre des bouts de code pour comparer les 2 langages, dans le sens C# vers Typescript. Pour tester les bouts de code vous pouvez utiliser avec Visual Studio Code pour C# [dotnet script](https://github.com/filipw/dotnet-script) (voir [mon post sur le sujet](https://www.ctrl-alt-suppr.dev/2022/02/28/tips-tricks-du-script-en-c/)) et pour TypeScript : [deno.land](https://deno.land/), ou directement en ligne avec [Playground](https://www.typescriptlang.org/play).  
 #### Les variables
 ```csharp
-// Déclarer une variable
+>// Déclarer une variable
 var unNombre = 12345;
 var unBlabla = "Faire du blabla";
 // équivaut à :
@@ -25,10 +25,8 @@ string unBlabla = "Faire du blabla";
 
 // Utilisation des constantes
 const int unAutreNombre = 123456;
-unAutreNombre = 123456; // ---> Exception
-```
-```typescript
-// Déclarer une variable
+unAutreNombre = 123456; // ---> Exception</pre>```typescript
+>// Déclarer une variable
 let unNombre = 12345;
 let unBlabla = "Faire du blabla";
 // équivaut à :
@@ -37,16 +35,14 @@ let unBlabla : String = "Faire du blabla";
 
 // Utilisation des constantes
 const unAutreNombre = 123456;
-unAutreNombre = 123456; // ---> Exception
-```
-
+unAutreNombre = 123456; // ---> Exception</pre>
 En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
 En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
 Pour les 2 langages, `const` indique que c’est une constante.   
 #### Les conditions
 ##### if, else
 ```csharp
-int x = 10;
+>int x = 10;
 int y = 20;
 
 if (x > y) 
@@ -56,10 +52,8 @@ if (x > y)
 else
 {
     Console.WriteLine("x est inférieur ou égal à y.");
-}
-```
-```typescript
-let x: number = 10;
+}</pre>```typescript
+>let x: number = 10;
 let y: number = 20;
 
 if (x > y) 
@@ -69,11 +63,4843 @@ if (x > y)
 else
 {
     console.log('x est inférieur ou égal à y.');
-}
+}</pre>##### switch
+```csharp
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+```typescript
+>int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre>```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```typescript
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```typescript
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+```csharp
+>int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre>```typescript
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```csharp
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```typescript
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```csharp
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```typescript
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```typescript
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+```typescript
+>int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre>```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```typescript
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```typescript
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```csharp
+>let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+```typescript
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+```csharp
+>// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+```typescript
+>let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
 ```
 ##### switch
-```csharp
-short day = 4;
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables"
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" d
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language=
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW"
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/cshar
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" dat
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand qu
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" dat
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### swit
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > 
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une v
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enl
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est i
+```
+
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighte
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlight
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotn
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enli
+```
+##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, n
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais no
+```
+
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighte
+```
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="variables">// Déclarer une variable
+let unNombre = 12345;
+let unBlabla = "Faire du blabla";
+// équivaut à :
+let unNombre : number = 12345;
+let unBlabla : String = "Faire du blabla";
+
+// Utilisation des constantes
+const unAutreNombre = 123456;
+unAutreNombre = 123456; // ---> Exception</pre>
+En C#, nous pouvons utiliser le mot clé `var` ([doc Microsoft](https://docs.microsoft.com/fr-fr/dotnet/csharp/language-reference/keywords/var)) pour déclarer une variable. C’est au moment de la compilation, que le compilateur va choisir le bon type pour la variable, mais nous pouvons aussi le dire de façon explicite, en indiquant directement le type. Personnellement je préfère, il n’y a pas ambiguïté. Pour les [types primitifs sur TS](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean).  
+En TS, c’est le mot clé `let` pour déclarer une variable, et n’a pas besoin d’être initialisée. Il y a aussi `var`, il est de portée sur la « function » et `let` est de portée sur le bloc.   
+Pour les 2 langages, `const` indique que c’est une constante.   
+#### Les conditions
+##### if, else
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="ifelse">int x = 10;
+int y = 20;
+
+if (x > y) 
+{
+    Console.WriteLine("x est plus grand que y.");
+} 
+else
+{
+    Console.WriteLine("x est inférieur ou égal à y.");
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="ifelse">let x: number = 10;
+let y: number = 20;
+
+if (x > y) 
+{
+    console.log('x est plus grand que y.');
+} 
+else
+{
+    console.log('x est inférieur ou égal à y.');
+}</pre>##### switch
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="switch">short day = 4;
 
 switch (day) {
     case 1:
@@ -99,10 +4925,7 @@ switch (day) {
     default:
         console.log("Euhh... y a une coui(biiiip) dans le pâté");
         break;
-}
-```
-```typescript
-let day : number = 4;
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="switch">let day : number = 4;
 
 switch (day) {
     case 1:
@@ -128,64 +4951,40 @@ switch (day) {
     default:
         console.log("Euhh... y a une coui(biiiip) dans le pâté");
         break;
-}
-```
-#### Les boucles
+}</pre>#### Les boucles
 ##### for
-```csharp
-for (var i = 0; i < 3; i++) 
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="C#" data-enlighter-group="bouclefor">for (var i = 0; i < 3; i++) 
 {
   Console.WriteLine("Numéro de i = " + i);
-}
-```
-```typescript
-for (let i = 0; i < 3; i++) 
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="bouclefor">for (let i = 0; i < 3; i++) 
 {
   console.log ("Numéro de i = " + i);
-}
-```
-##### foreach
-```csharp
-int[] collection = {10,20,30,40};
+}</pre>##### foreach
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="C#" data-enlighter-group="foreach">int[] collection = {10,20,30,40};
 
 foreach(var item in collection) {
   Console.WriteLine(item);
-}
-```
-```typescript
-let collection = [10, 20, 30, 40];
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="TS" data-enlighter-group="foreach">let collection = [10, 20, 30, 40];
 
 for (var item of collection) {
   console.log(item);
-}
-```
-##### while
-```csharp
-int i = 1;
+}</pre>##### while
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="C#" data-enlighter-group="while">int i = 1;
 
 while (i < 4) {
     Console.WriteLine( "J'en suis à :" + i );
     i++;
-}
-```
-```typescript
-let i: number = 1;
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="while">let i: number = 1;
 
 while (i < 4) {
     console.log( "J'en suis à :" + i )
     i++;
-}
-```
-#### Les méthodes/functions
-```csharp
-// Fonction sans paramètre ni retour.
+}</pre>#### Les méthodes/functions
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="function">// Fonction sans paramètre ni retour.
 public void Display()
 {
    Console.WritleLine("Hello de C# !");
-}
-```
-```typescript
-// Fonction sans paramètre ni retour.
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="function">// Fonction sans paramètre ni retour.
 function display() 
 {
     console.log("Hello de TypeScript!");
@@ -195,14 +4994,11 @@ function display()
 function display() : void 
 {
     console.log("Hello de TypeScript!");
-}
-```
-
+}</pre>
 Le type retour d’une méthode en TS se met après les paramètres.  
 `function NomDeLaFonction (nomParameter: type,...) : typeRetour { ... }`  
 Si aucun retour, pas besoin d’ajouter le type de retour, mais nous pouvons le mettre ! Le retour `void` existe. Moi j’aime bien le mettre, c’est EXPLICITE !  
-```csharp
-public string Greet(string greeting, string name) 
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="fonctions">public string Greet(string greeting, string name) 
 {
     return greeting + " " + name + "!";
 }
@@ -217,10 +5013,7 @@ public string Greet(string greeting, string name = null)
 public string Greet(string name, string greeting = "Hello")
 {
     return greeting + " " + name + "!";
-}
-```
-```typescript
-function Greet(greeting: string, name: string ) : string 
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="fonctions">function Greet(greeting: string, name: string ) : string 
 {
     return greeting + ' ' + name + '!';
 }
@@ -235,15 +5028,12 @@ function Greet(greeting: string, name?: string ) : string
 function Greet(name: string, greeting: string = "Hello") : string 
 {
     return greeting + ' ' + name + '!';
-}
-```
-
+}</pre>
 En TS il y a une différence entre un paramètre optionnel et un paramètre par défaut. Pour un paramètre optionnel `name?: string`, si le paramètre n’est pas indiqué lors de l’appel à la function, le type sera `undefined`.  
 #### Class
 
 La doc sur les `class` en Typescript ([doc sur Typescript.org](https://www.typescriptlang.org/docs/handbook/2/classes.html)). Je vais essayer de mettre le plus de chose dans le bout de code.  
-```csharp
-public class Person
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="constructeur">public class Person
 {
     protected readonly string name;
     // Pour montrer les niveaux de visibilité
@@ -281,10 +5071,7 @@ public class Habitant : Person
     {
         Console.WriteLine($"Je suis " + this.name + " et j'habite au " + this.Adresse);
     }
-}
-```
-```typescript
-class Person 
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="constructeur">class Person 
 {
     // Fields
     protected readonly name: string;
@@ -330,42 +5117,33 @@ class Habitant extends Person
 
 // Utilisation de la class
 let hab : Habitant = new Habitant("Jean", 25, "15151548", "la bas");
-hab.whoAreYou();
-```
-
+hab.whoAreYou();</pre>
 En C# ou TS, il y a un quelques différences, mais ça reste très proche.  
 #### Interface
 
 Bon là c’est la grosse différence que j’ai trouvé entre C# et TS.  
 ##### Interface en tant que Type
-```typescript
-interface Person {
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">interface Person {
     name: string;
     age: number;
 }
 
-let quiEstce: Person = { name:"Jean", age:25 };
-```
-
+let quiEstce: Person = { name:"Jean", age:25 };</pre>
 C’est une entité, un simple objet POCO en C#. Juste des propriétés sans méthode pour ajouter du « comportement ».  
 ##### Interface « classique » par rapport au C#
-```csharp
-interface Person 
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">interface Person 
 {
     name: string;
     age: number;
     
     // Déclare une fonction
     getAnneeNaissance(anneeEnCours: Date) : number;
-}
-```
-
+}</pre>
 On peut déclarer une interface, avec des propriétés et des méthodes qui seront implémentés dans une class.  
 ##### Interface comme type de fonction
 
 L’interface TypeScript est également utilisée pour définir un type de fonction. Cela garantit la signature de la fonction.  
-```typescript
-// Interface comme type de fonction
+<pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="" data-enlighter-group="">// Interface comme type de fonction
 interface Person 
 {
     name: string;
@@ -378,9 +5156,7 @@ createPerson(name: string, age: number) : void
     Person     
 }
 
-let unePersonne: Person = createPerson;
-```
-
+let unePersonne: Person = createPerson;</pre>
 En TS : Les interfaces fournissent une structure aux objets. Elles peuvent hériter d’autres interfaces et des class.  
 En C# : Les interfaces sont des contrats pour les classes à implémenter. Elles peuvent seulement hériter d’autres interfaces.  
 #### Et le LINQ dans tout ça ?
@@ -388,8 +5164,7 @@ En C# : Les interfaces sont des contrats pour les classes à implémenter. Elles
 Une des grandes forces de C# c’est [LINQ](https://docs.microsoft.com/fr-fr/dotnet/csharp/programming-guide/concepts/linq/), alors est-ce qu’il y a la même chose ?   
 Eh bien oui !  
 <div class="wp-block-image"><figure class="aligncenter size-large"><img src="https://media.giphy.com/media/3KC2jD2QcBOSc/giphy.gif" alt=""/></figure></div>###### Where
-```csharp
-Person jean = new Person() { Name="Jean", Age=42, Sexe="homme"};
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="linqwhere">Person jean = new Person() { Name="Jean", Age=42, Sexe="homme"};
 Person gisel = new Person() { Name="Giselle",Age=52,Sexe="femme"};
 Person marcel = new Person() { Name="Marcel", Age=25,Sexe="homme"};
 Person marion = new Person() { Name="Marion", Age=28, Sexe="femme"};
@@ -407,10 +5182,7 @@ public class Person
 	public string Name { get; set; }
 	public int Age { get; set; }
 	public string Sexe { get; set; }
-}
-```
-```typescript
-interface Person{
+}</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="linqwhere">interface Person{
 	name: string;
 	age: number;
 	sexe: string;
@@ -427,23 +5199,9 @@ let selectedPerson = allPeople.filter(x => x.sexe === 'homme');
 for(let person of selectedPerson)
 {
 	console.log(person.name);
-}
-```
-###### Any
-```csharp
-bool found = allPeople.Any(x => x.age == 25);
-```
-```typescript
-boolean found = (allPeople.findIndex(x => x.age === 25) >= 0);
-```
-###### FirstOrDefault
-```csharp
-var person = allPeople.FirstOrDefault(x => x.Name == "Jean");
-```
-```typescript
-let person = allPeople.find(x => x.name === "Jean");
-```
-## Conclure
+}</pre>###### Any
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="linqany">bool found = allPeople.Any(x => x.age == 25);</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="linqany">boolean found = (allPeople.findIndex(x => x.age === 25) >= 0);</pre>###### FirstOrDefault
+<pre class="EnlighterJSRAW" data-enlighter-language="csharp" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="c#" data-enlighter-group="linqfirstdefault">var person = allPeople.FirstOrDefault(x => x.Name == "Jean");</pre><pre class="EnlighterJSRAW" data-enlighter-language="typescript" data-enlighter-theme="" data-enlighter-highlight="" data-enlighter-linenumbers="" data-enlighter-lineoffset="" data-enlighter-title="ts" data-enlighter-group="linqfirstdefault">let person = allPeople.find(x => x.name === "Jean");</pre>## Conclure
 
 Je n’ai pas tout mis car il y a des particularités dans chaque langage, et c’est vraiment dans une utilisation quotidienne et sur du long terme qu’on maitrise un langage, mais nous pouvons voir que les 2 langages se rapproche beaucoup.  
 
