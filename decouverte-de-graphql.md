@@ -122,7 +122,7 @@ namespace WebApiGraphQl.Data
 	/// <returns></returns>
 	Personne GetPersonne(Guid id);
     }
-}</Personne>
+}
 ```
 ```csharp
 using System.Text.Json;
@@ -154,7 +154,7 @@ namespace WebApiGraphQl.Data
 			return AllPeople.FirstOrDefault(x => x.id == id);
 		}	
 	}
-}</Personne></Personne></Personne>
+}
 ```
 
 Déclaration de ce nouveau service dans `Program.cs`  
@@ -198,7 +198,7 @@ namespace WebApiGraphQl.RequetesGraph
 			return _access.GetPersonne(id);
 		}
 	}
-}</Personne>
+}
 ```
 
 J’exposse 2 méthodes pour interroger les données.  
@@ -224,7 +224,7 @@ var app = builder.Build();
 
 app.MapGraphQL("/");
 
-app.Run();</ElRequetor></IDataAccess,>
+app.Run();
 ```
 ## Testons l’application
 
