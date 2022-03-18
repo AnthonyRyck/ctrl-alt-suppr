@@ -61,7 +61,8 @@ Il faut ajouter les packages suivant.
 dotnet add .\TutoGraphQL package HotChocolate.AspNetCore
 dotnet add .\TutoGraphQL package HotChocolate.Data
 ```
-* `HotChocolate.AspNetCore` contient le middleware GraphQL ASP.NET Core pour Hot Chocolate. De plus, ce package comprend le middleware [Banana Cake Pop](https://chillicream.com/docs/bananacakepop/getting-started), qui fournit un IDE GraphQL (c’est l’IDE sur l’exemple que j’ai mis en live). Cela permet de tester des requêtes.  /r/n* `HotChocolate.Data` contient des extensions prêtes à l’emploi pour la gestion des données dans HotChocolate (filtrage, projections et tri).  /r/n### Ajout du schéma GraphQL
+* `HotChocolate.AspNetCore` contient le middleware GraphQL ASP.NET Core pour Hot Chocolate. De plus, ce package comprend le middleware [Banana Cake Pop](https://chillicream.com/docs/bananacakepop/getting-started), qui fournit un IDE GraphQL (c’est l’IDE sur l’exemple que j’ai mis en live). Cela permet de tester des requêtes.  
+* `HotChocolate.Data` contient des extensions prêtes à l’emploi pour la gestion des données dans HotChocolate (filtrage, projections et tri).  /r/n### Ajout du schéma GraphQL
 
 Le schéma GraphQL est défini par des entités. Dans notre cas, se seront `Personne` et `Friend`.  
 ```csharp
