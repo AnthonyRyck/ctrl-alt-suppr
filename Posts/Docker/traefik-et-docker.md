@@ -65,8 +65,8 @@ services:
        environment:
          - WORDPRESS_DB_HOST=123.123.123.123:3306
          - WORDPRESS_DB_USER=YourUserLogin 
-		 - WORDPRESS_DB_PASSWORD=YourPassword 
-		 - WORDPRESS_DB_NAME=YourDbName
+         - WORDPRESS_DB_PASSWORD=YourPassword 
+         - WORDPRESS_DB_NAME=YourDbName
 
        labels:
          - traefik.enable=true
