@@ -96,5 +96,5 @@ public void ConfigureServices(IServiceCollection services)
         
         services.AddHostedService<AutreService>();
         services.AddHostedService<EncoreUnAutreService>();
-}</EncoreUnAutreService></AutreService></ResetHostedService>
+}
 ```
