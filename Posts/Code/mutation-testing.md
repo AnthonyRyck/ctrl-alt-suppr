@@ -359,7 +359,8 @@ Version: 1.2.1
 [05:38:40 INF] Capture mutant coverage using 'CoverageBasedTest' mode.
 [05:38:41 INF] 37    mutants will be tested because: not run
 [05:38:41 INF] 37    total mutants will be tested
-████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████100,00% │ Testing mutant 37 / 37 │ K 36 │ S 1 │ T 0 │ ~0m 00s │                                                                                     00:00:17
+100,00% │ Testing mutant 37 / 37 │ K 36 │ S 1 │ T 0 │ ~0m 00s │   
+00:00:17
 
 Killed:   36
 Survived:  1
