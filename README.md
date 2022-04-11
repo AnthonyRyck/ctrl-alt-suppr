@@ -8,7 +8,7 @@ Sauvegarde de mes articles
 08/03/22 [Passer du C# au TypeScript](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Code/passer-du-c-au-typescript.md)  
 
 ## Blazor
-11/04/22 [Utiliser des raccourcis clavier avec Blazor](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Code/utiliser-des-raccourcis-clavier-avec-blazor.md)  
+11/04/22 [Utiliser des raccourcis clavier avec Blazor](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Blazor/utiliser-des-raccourcis-clavier-avec-blazor.md)  
 
 ## Découverte
 07/02/22 [Découverte de GraphQL](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Decouverte/decouverte-de-graphql.md)  
