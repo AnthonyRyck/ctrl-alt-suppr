@@ -73,7 +73,7 @@ public class Pack
     {
         Produits.Add(produit);
     }
-}</Produit></Produit>
+}
 ```
 
 Comme dit plus haut, la `class Engine` va traiter des produits pour savoir s’ils sont bon (respecte une taille et un poids), pour pouvoir être packagé. Voici le code :  
@@ -185,7 +185,7 @@ public class Engine
 	}
 
 	#endregion
-}</Produit></Pack></Produit></Pack></Produit>
+}
 ```
 
 Rien de fou fou, je reste dans un exemple simple, mais je ne voulais pas un exemple avec des méthodes `a + b`, `a > b`,….  
@@ -296,7 +296,7 @@ public void TestOnNumeroLot()
 	Assert.True(engine.CompteurDuJour == 1, "Il y a qu'un pack complet (6 produits)");
 	Assert.True(engine.PacksRemplis[0].NumLot == 0);
 	#endregion
-}</Produit></Produit>
+}
 ```
 
 Le fait de tester si la propriété `NumLot == 0` élimine le mutant. Stryker, en mettant `--` il sera détecté.  
@@ -340,7 +340,7 @@ public void TestOnPoidsMinimal()
 	Assert.True(engine.RejetProduits.Count == 1, "Il y a un rejet, poids trop bas");
 	
 	#endregion
-}</Produit></Produit>
+}
 ```
 
 Là j’ai le poids 94 grammes qui sera en rejet, normal, et c’est avec le produit avec un poids de 95 grammes, qui est sur la limite de la marge inférieure, que le mutant sera détecté.   
