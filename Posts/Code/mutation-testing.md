@@ -6,7 +6,7 @@ En décembre 2021, j’ai suivi une conf à l’Agile Tour de Rennes, sur le Mut
 Dans ce post je vais montrer comment mettre en place un outil de mutation.  
 ## Définition
 
-L’idée du Mutation Testing est de modifier le code « métier » pour voir si les tests échouent. Par exemple, dans une méthode ou il y aurait :   
+L’idée du Mutation Testing est de modifier le code « métier » pour voir si les tests échouent. Par exemple, dans une méthode ou il y aurait :   
 `var result = x + y`   
 serait transformé en :   
 `var result = x - y`.  
@@ -191,7 +191,7 @@ public class Engine
 Rien de fou fou, je reste dans un exemple simple, mais je ne voulais pas un exemple avec des méthodes `a + b`, `a > b`,….  
 ## Installation de Stryker.NET
 
-Installons Stryker localement à un projet. Nous allons utiliser un « outils » dotnet (doc sur [les outils dotnet](https://docs.microsoft.com/fr-fr/dotnet/core/tools/global-tools)).   
+Installons Stryker localement à un projet. Nous allons utiliser un « outils » dotnet (doc sur [les outils dotnet](https://docs.microsoft.com/fr-fr/dotnet/core/tools/global-tools)).   
 Pour installer un outil pour un accès local uniquement (pour le répertoire courant et les sous-répertoires), nous devons ajouter un fichier manifeste. ([dotnet new tool-manifest](https://docs.microsoft.com/fr-fr/dotnet/core/tools/global-tools#install-a-local-tool)).  
 Il faut se positionner dans le répertoire du projet voulu et faire les commandes suivantes.  
 ```generic
@@ -226,7 +226,7 @@ Notre projet est prêt pour subir quelques mutations.
 ## Utilisation de Stryker
 
 Dans le répertoire du projet de test unitaire (`Business.Test`), il faut exécuter la commande `dotnet stryker` pour que Stryker nous crée des mutants.  
-<img src="https://media.giphy.com/media/I0Z7xEnYL3Fu0/giphy.gif" alt="" />
+![](https://media.giphy.com/media/I0Z7xEnYL3Fu0/giphy.gif)
 
 Informations que Stryker affiche.  
 ```generic
@@ -256,11 +256,11 @@ You can open it in your browser of choice.
 ```
 
 Il a créé 37 mutants dans le code, 34 ont pu être tués mais il en reste 3. Il crée aussi un répertoire `StrykerOutput` dans le répertoire d’exécution de la commande, avec un rapport en html.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-04-Report.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-04-Report.png)
 
 Dans le rapport, ouvrons `Engine.cs`, il y a 2 mutants, tentons de les tuer.  
 #### Premier mutant
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-05-Mutants01.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-05-Mutants01.png)
 
 Donc là il nous montre que le fait de changer le compteur de sens, ça ne perturbe pas du tout les tests unitaires.  
 Normal… aucun test ne couvre cette partie. J’ajoute un nouveau test unitaire.  
@@ -301,7 +301,7 @@ public void TestOnNumeroLot()
 
 Le fait de tester si la propriété `NumLot == 0` élimine le mutant. Stryker, en mettant `--` il sera détecté.  
 #### Deuxième mutant
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-05-Mutants02.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-05-Mutants02.png)
 
 Là le poids minimal n’est pas testé s’il est sur la marge inférieure. J’ai beau avoir des tests avec des poids différents, mais je n’en ai pas un qui va tester sur les poids qui tendent vers le mini, je faisais que sur des poids qui aller sur la marge supérieure.   
 Ajout d’un nouveau test unitaire :  
@@ -374,11 +374,10 @@ You can open it in your browser of choice.
 ```
 
 Et le rapport.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-06-Report-nouveau.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/MutationTesting/MutationTesting-06-Report-nouveau.png)
 
 Nous pouvons voir que nous avons tués les 2 mutants.  
 ## Pour conclure
 
 Avec Stryker j’ai pu voir que certaines parties du code n’étaient pas testés et il pouvait nous ajouter des mutants sans que les tests unitaires ne voient rien. Ensuite, il nous a aussi montré que sur des méthodes qui ont tests, il pouvait aussi ajouter des mutants sans problème… C’est un outil qui vient en complément avec les tests unitaires et d’autres métriques. Evitons de nous retrouver avec une couverture de code à 97%, mais qu’au final ces tests ne sont là que pour gonfler une métrique sans réel apport pour le projet, et de nous retrouver seul face à innombrables potentiels bugs.   
-<img src="https://media.giphy.com/media/h7jjtmZstLBTCkWSKQ/giphy.gif" alt="" />
-
+![](https://media.giphy.com/media/h7jjtmZstLBTCkWSKQ/giphy.gif)
