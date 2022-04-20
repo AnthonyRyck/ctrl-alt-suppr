@@ -1,7 +1,5 @@
-
-# Utiliser des raccourcis clavier avec Blazor
-
-Dans une application, il est toujours bon de pouvoir utiliser des raccourcis clavier pour faire une action, comme « CTRL + S » pour sauvegarder son travail, même dans une application web. Dans ce post je vais montrer la librairie [Toolbelt.Blazor.HotKeys](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys), qui est un projet Open Source sur GitHub. Je vais prendre mon projet favori de démo sur Blazor : [FanApps](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/FansApp) ([en live ici](https://fandemo.ctrl-alt-suppr.dev/)). L’idée est d’ajouter sur la page d’Index, la possibilité de faire « SHIFT +  » un numéro (de 1 à 6) pour naviguer entre les différentes pages.  
+Dans une application, il est toujours bon de pouvoir utiliser des raccourcis clavier pour faire une action, comme « CTRL + S » pour sauvegarder son travail, même dans une application web. Dans ce post je vais montrer la librairie [Toolbelt.Blazor.HotKeys](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys), qui est un projet Open Source sur GitHub.  
+Je vais prendre mon projet favori de démo sur Blazor : [FanApps](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/FansApp) ([en live ici](https://fandemo.ctrl-alt-suppr.dev/)). L’idée est d’ajouter sur la page d’Index, la possibilité de faire « SHIFT +  » un numéro (de 1 à 6) pour naviguer entre les différentes pages.  
 ## Installation
 
 Il faut d’abord installer le package nuget à notre projet Blazor ([nuget package](https://www.nuget.org/packages/Toolbelt.Blazor.HotKeys/)).  
@@ -90,7 +88,8 @@ namespace FansApp.ViewModel
 ```
 
 Examinons cela d’un peu plus près.  
-<img loading="lazy" src="https://media.giphy.com/media/Gpf8A8aX2uWAg/giphy-downsized.gif" alt="" width="596" height="334" />
+![giphy](https://media.giphy.com/media/Gpf8A8aX2uWAg/giphy-downsized.gif)  
+
 ### Le constructeur
 ```csharp
 public IndexViewModel(HotKeys hotKeys, NavigationManager navigation)
@@ -111,9 +110,9 @@ public IndexViewModel(HotKeys hotKeys, NavigationManager navigation)
 Je récupère le service `HotKeys` via l’injection de dépendance de ASP.Net, ainsi que `NavigationManager` (*rien à voir avec HotKeys*), et je configure les raccourcis que CETTE page capturera. C’est sur cette page (via ce ViewModel) que je configure les raccourcis, donc ils ne seront utilisables que sur la page Index.  
 Je vais juste expliquer cette signature de la méthode `.Add` que j’ai utilisé pour l’exemple :  
 * 1er paramètre – `ModKeys` : la touche de modification (CTRL, SHIFT, ALT, META ou rien (`ModKeys.None`)). [Liste des ModKeys](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/ModKeys.cs).  
-Pour info la touche « META » pour Windows : c’est la touche Windows, et pour Apple : c’est la touche Command.  
+Pour info la touche « META » pour Windows : c’est la touche Windows, et pour Apple : c’est la touche Command.  
 * 2eme paramètre – `Keys` : toutes les autres touches du clavier, A à Z, 0 à 9,..   
-Elle prend en charge des touches spéciales comme *« Audio Volume Down/Up, Launch Application, … »*. [Liste des Keys](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/Keys.cs).  
+Elle prend en charge des touches spéciales comme *« Audio Volume Down/Up, Launch Application, … »*. [Liste des Keys](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/Keys.cs).  
 * 3eme paramètre – l’Action : C’est la méthode qui sera appelée quand la combinaison de touche sera faite.  
 * 4eme paramètre – la description : c’est un paramètre non obligatoire, cependant peut être utile quand vous avez beaucoup de raccourcis.  
 ```csharp
@@ -125,8 +124,8 @@ Elle prend en charge des touches spéciales comme *« Audio Volume Down/Up, Lau
 .Add(ModKeys.Ctrl | ModKeys.Shift, Keys.Num1, OpenFanclubPage, "Ouvrir Fanclub Page.")
 ```
 
-Maintenant si vous avez remarqué, j’ai mis pour `Keys.Num1` et `Keys.Num2`, 2 méthodes distingues, et pour les autres j’ai mis la même méthode.   
-Les méthodes qui sont appelées, doivent avoir comme paramètre un <code>[HotKeyEntry](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/HotKeyEntry.cs)</code>. Avec lui, ça me permet de faire un `switch` sur la propriété `Key`. Valable pour mon cas, car j’utilise toujours le modificateur SHIFT.  
+Maintenant si vous avez remarqué, j’ai mis pour `Keys.Num1` et `Keys.Num2`, 2 méthodes distinct, et pour les autres j’ai mis la même méthode.   
+Les méthodes qui sont appelées, doivent avoir comme paramètre un [HotKeyEntry](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/HotKeyEntry.cs). Avec lui, ça me permet de faire un `switch` sur la propriété `Key`. Valable pour mon cas, car j’utilise toujours le modificateur SHIFT.  
 Note : `HotKeyEntry` fournit aussi la propriété `ModKeys`.  
 ```csharp
 private Task OpenPage(HotKeyEntry arg)
@@ -157,5 +156,4 @@ private Task OpenPage(HotKeyEntry arg)
 Enfin il faut que le composant Razor ou le ViewModel implémente `IDisposable`, pour pouvoir libérer les ressources (inscrit dans la doc – *Step 4 de How to install and use?*). En regardant un peu plus la `class HotKeysContext` (*[code](https://github.com/jsakamoto/Toolbelt.Blazor.HotKeys/blob/master/Toolbelt.Blazor.HotKeys/HotKeysContext.cs)*), il y a les méthodes : `Register` et `Unregister` utiliser dans son `Dispose()`.  
 
 Voilà, il est possible de faire des exclusions en fonction de quel élément à le focus, mais je vous laisse découvrir cette librairie.  
-<img src="https://media.giphy.com/media/bOwOAey4MDO3ivBkgK/giphy-downsized.gif" alt="" />
-
+![giphy](https://media.giphy.com/media/bOwOAey4MDO3ivBkgK/giphy-downsized.gif)
