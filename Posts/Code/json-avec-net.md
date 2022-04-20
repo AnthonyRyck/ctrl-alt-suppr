@@ -1,12 +1,12 @@
 
 # JSON avec .Net
 
-En lisant le post « [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)« , je me suis rendu compte que j’utilisais que très peu l’espace de noms `System.Text.Json` du .Net. Des années a utiliser [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json), que je ne pensais plus à tester ou utiliser autre chose. Aaahhh la routine, l’ennemi du changement.  
+En lisant le post « [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/)« , je me suis rendu compte que j’utilisais que très peu l’espace de noms `System.Text.Json` du .Net. Des années a utiliser [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json), que je ne pensais plus à tester ou utiliser autre chose. Aaahhh la routine, l’ennemi du changement.  
 Microsoft a livré cet espace de noms `System.Text.Json` avec le .Net Core 3.0 en 2019. Le pourquoi cet espace de noms était la performance et la sécurité. Microsoft a essayé d’empaqueter `Newtonsoft.Json` dans .Net, ils ont eu quelques difficultés. Microsoft souhaitait également supprimer la dépendance `Newtonsoft.Json` d’ASP.Net Core 3.0. Voilà pour la petite histoire.  
 J’ai fait un projet de test pour montrer cet espace de noms. Le projet se trouve sur [GitHub](https://github.com/AnthonyRyck/CodesPourDevTo), dans le répertoire `dotNet6`, projet `TutoJson`.   
 ## Lire un JSON
 
-Que la source soit via une requête Web ou d’un fichier JSON, il faut « `Deserializer` » le JSON en objet. Pour l’exemple j’ai généré un fichier JSON avec le site : [JSON Generator](https://www.json-generator.com/#). J’ai crée des « Personnes ». En voici un exemple de personne.  
+Que la source soit via une requête Web ou d’un fichier JSON, il faut « `Deserializer` » le JSON en objet. Pour l’exemple j’ai généré un fichier JSON avec le site : [JSON Generator](https://www.json-generator.com/#). J’ai crée des « Personnes ». En voici un exemple de personne.  
 ```json
 {
     "id": "70f05566-1386-425d-bec3-d20b9c8e88fa",
@@ -42,7 +42,7 @@ Que la source soit via une requête Web ou d’un fichier JSON, il faut « `Des
 }
 ```
 
-Voilà un bout de code, pour passer d’une forme « string » en objet.  
+Voilà un bout de code, pour passer d’une forme « string » en objet.  
 ```csharp
 "######## Début de l'application Démo ########".ToConsoleInfo();
 "######## pour JSON en .Net 6         ########".ToConsoleInfo();
@@ -64,9 +64,9 @@ using(var stream = File.OpenRead(pathFile))
 ```
 
 Il faut utiliser :   
-<code>await JsonSerializer.DeserializeAsync<List<Personne>>(stream);</code>  
+`await JsonSerializer.DeserializeAsync<List<Personne>>(stream);`  
 Doc Microsoft pour [JsonSerializer.DeserializeAsync](https://docs.microsoft.com/fr-fr/dotnet/api/system.text.json.jsonserializer.deserializeasync?view=net-6.0#:~:text=DeserializeAsync%20%28Stream%2C%20Type%2C%20JsonSerializerOptions%2C%20CancellationToken%29%20Asynchronously%20reads%20the,type.%20The%20stream%20will%20be%20read%20to%20completion.).  
-A partir de là, nous pouvons travailler avec des objets `Personne`, mais moi je veux faire de la « manipulation » sur le JSON, sans passer pour nos objets « métiers ».  
+A partir de là, nous pouvons travailler avec des objets `Personne`, mais moi je veux faire de la « manipulation » sur le JSON, sans passer pour nos objets « métiers ».  
 ## JsonObject / JsonNode
 
 Chargement en mémoire.  
@@ -91,7 +91,7 @@ double latitude = jsonNodePerson[1]["latitude"].GetValue<double>();
 $"Latitude renseigné : {latitude}".ToConsoleResult();
 ```
 
-Il est possible de « naviguer » dans l’arbre du JSON. Et s’il y a un `Array` dans une propriété, pareil on peut naviguer dedans.  
+Il est possible de « naviguer » dans l’arbre du JSON. Et s’il y a un `Array` dans une propriété, pareil on peut naviguer dedans.  
 La propriété `friends` est un `Array`.  
 ```csharp
 "Parcours dans les amis :".ToConsoleInfo();
@@ -103,10 +103,10 @@ string nomAmi = jsonNodePerson[1]["friends"][2]["name"].GetValue<string>();
 $"Nom de l'amis : {nomAmi}".ToConsoleResult();
 ```
 
-J’ai utiliser la méthode `ToJsonString()` qui : (je cite la [doc](https://docs.microsoft.com/fr-fr/dotnet/api/system.text.json.nodes.jsonnode.tojsonstring?view=net-6.0)) *« Convertit l’instance actuelle en chaîne au format JSON »*.  
+J’ai utiliser la méthode `ToJsonString()` qui : (je cite la [doc](https://docs.microsoft.com/fr-fr/dotnet/api/system.text.json.nodes.jsonnode.tojsonstring?view=net-6.0)) *« Convertit l’instance actuelle en chaîne au format JSON »*.  
 
 Bon maintenant je veux ajouter une nouvelle propriété à toutes les personnes, mais toujours sans passer par un objet `Personne`.   
-Se sera la propriété `preference`, et ils auront tous la même valeur : « .Net 6 le meilleur ».  
+Se sera la propriété `preference`, et ils auront tous la même valeur : « .Net 6 le meilleur ».  
 ```csharp
 "Ajout d'une nouvelle propriété pour tout le monde : preference, avec sa valeur".ToConsoleInfo();
 "#:> Appuyer sur une touche pour commencer.".ToConsoleInfo();
@@ -129,8 +129,7 @@ J’indique que `jsonNodePerson` est un type `JsonArray`, ce qui me permet de bo
 `JsonArray jsonArray = jsonNodePerson.AsArray();`  
 Et pour chaque élément, j’ajoute la nouvelle propriété :  
 `jsonArray[i]["preference"] = ".Net 6 le meilleur";`  
-<img src="https://media.giphy.com/media/zcCGBRQshGdt6/giphy.gif" alt="" />
-
+![](https://media.giphy.com/media/zcCGBRQshGdt6/giphy.gif)  
   
 On peut dire que c’est très facile d’ajouter une propriété.   
 Même chose dans le sens inverse, je veux enlever la propriété `gender`.  
@@ -155,7 +154,8 @@ Il est possible de charger un JSON dans un [JsonDocument](https://docs.microsoft
 
 Ce qui veut dire un gain sur l’espace mémoire.  
 Et l’autre point, qui n’est pas des moindres :  
->Cette classe utilise les ressources de la mémoire regroupée pour réduire l’impact du garbage collector (GC) dans les scénarios à forte utilisation. Si vous ne parvenez pas à supprimer correctement cet objet, la mémoire ne sera pas retournée au pool, ce qui augmentera l’impact GC sur les différentes parties de l’infrastructure.Microsoft
+>Cette classe utilise les ressources de la mémoire regroupée pour réduire l’impact du garbage collector (GC) dans les scénarios à forte utilisation. 
+>Si vous ne parvenez pas à supprimer correctement cet objet, la mémoire ne sera pas retournée au pool, ce qui augmentera l’impact GC sur les différentes parties de l’infrastructure.Microsoft
   
 *Source : Microsoft*  
 
@@ -204,7 +204,7 @@ using (JsonDocument document = JsonDocument.Parse(stream))
 C# 10 est plein de petites nouveautés, que je vous invite à lire sur [Announcing .Net 6](https://devblogs.microsoft.com/dotnet/announcing-net-6/#system-linq-enumerable-support-for-index-and-range-parameters).  
 ## Serialization
 
-Maintenant nous allons « Serializer » une liste d’objet `Incident`. Il n’y a que 2 propriétés dans cet objet, `Id` et `Titre`.  
+Maintenant nous allons « Serializer » une liste d’objet `Incident`. Il n’y a que 2 propriétés dans cet objet, `Id` et `Titre`.  
 ```csharp
 List<Incident> incidentsObject = new List<Incident>();
 for (int i = 0; i <= 10; i++)
@@ -217,14 +217,14 @@ string contentInString = JsonSerializer.Serialize(incidentsObject);
 contentInString.ToConsoleResult();
 WriteLine();
 
-"Raahhh beurk, ce n'est pas indenté".ToConsoleInfo();</Incident></Incident>
+"Raahhh beurk, ce n'est pas indenté".ToConsoleInfo();
 ```
 
 Voilà la sortie.  
 ```json
 [{"Id":0,"Titre":"Probl\u00E8me num 0"},{"Id":1,"Titre":"Probl\u00E8me num 1"},{"Id":2,"Titre":"Probl\u00E8me num 2"},{"Id":3,"Titre":"Probl\u00E8me num 3"},{"Id":4,"Titre":"Probl\u00E8me num 4"},{"Id":5,"Titre":"Probl\u00E8me num 5"},{"Id":6,"Titre":"Probl\u00E8me num 6"},{"Id":7,"Titre":"Probl\u00E8me num 7"},{"Id":8,"Titre":"Probl\u00E8me num 8"},{"Id":9,"Titre":"Probl\u00E8me num 9"},{"Id":10,"Titre":"Probl\u00E8me num 10"}]
 ```
-<img src="https://media.giphy.com/media/eGguteXjiil6LcvdQ6/giphy.gif" alt="" />
+![](https://media.giphy.com/media/eGguteXjiil6LcvdQ6/giphy.gif)  
 
 Quand vous exécuterez le code, le JSON est tout en ligne par défaut, ce qui est bien pour le stockage, envoie sur le Web, mais incompréhensible quand il faut l’ouvrir. Il est possible d’indiquer au moment de la sérialisation d’indenté le JSON avec `JsonSerializerOptions`.  
 ```csharp
@@ -279,7 +279,7 @@ contentInString = JsonSerializer.Serialize(incidentsObject, options);
 }
 ```
 
-Bon, le JSON est indenté, mais les caractères spéciaux ne sont pas reconnu. Pour remédier à ça il faut encore ajouter une option.  
+Bon, le JSON est indenté, mais les caractères spéciaux ne sont pas reconnus. Pour remédier à ça il faut encore ajouter une option.  
 ```csharp
 JsonSerializerOptions optionSpecial = new()
 {
@@ -293,8 +293,9 @@ contentInString = JsonSerializer.Serialize(incidentsObject, optionSpecial);
 Avec  `UnicodeRanges`, il est possible de choisir l’encodage des caractères. –> Doc [UnicodeRanges](https://docs.microsoft.com/fr-fr/dotnet/api/system.text.unicode.unicoderanges?view=net-6.0).   
 
 Je fais court sur cette partie, beaucoup d’explications pour la sérialisation sont sur le post :  
- « [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/) » que j’ai parlé au début.  
-## Création d’un JSON à la « mano »
+ « [Try the new System.Text.Json source generator](https://devblogs.microsoft.com/dotnet/try-the-new-system-text-json-source-generator/) » que j’ai parlé au début.  
+
+## Création d’un JSON à la « mano »
 
 Bon maintenant, je veux pouvoir créer un JSON de toute pièce, sans objet !   
 Création du JSON Incident.  
@@ -339,6 +340,5 @@ Dans cette exemple, j’ai voulu montrer les 2 manières de créer une structure
 }
 ```
 
-Comme nous travaillons avec des objets `JsonObject`, `JsonNode`, `JsonArray`, nous pouvons faire tout les manipulations du début du post.  
-Pour ce qui est de la performance, il existe plusieurs posts sur le Web mais sans trop vous « spoiler », c’est le meilleur !  
-
+Comme nous travaillons avec des objets `JsonObject`, `JsonNode`, `JsonArray`, nous pouvons faire toutes les manipulations du début du post.  
+Pour ce qui est de la performance, il existe plusieurs posts sur le Web mais sans trop vous « spoiler », c’est le meilleur !  
