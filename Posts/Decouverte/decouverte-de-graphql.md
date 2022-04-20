@@ -2,7 +2,7 @@
 
 Marre d’avoir des retours de votre API avec la moitié de la base de données, alors que vous vouliez juste connaitre un ID d’un champ en particulier ?   
 Fatigué d’avoir à faire des *end points* en masse, pour avoir un type de retour, puis un autre, et encore un autre, pour au final dire, « Au puis merde, je vais tout ramener, et je ferais le tri des patates dans l’application… »  
-<img src="https://media.giphy.com/media/l1KVaj5UcbHwrBMqI/giphy.gif" alt="" />
+![giphy](https://media.giphy.com/media/l1KVaj5UcbHwrBMqI/giphy.gif)  
 
 GraphQL est là pour vous simplifier la vie.  
 ## Qu’est-ce que GraphQL
@@ -51,7 +51,7 @@ Pour découvrir GraphQL, nous allons créer notre serveur web. Cet exemple sera 
 ### Création du projet de test
 
 Toute la création du projet se fera en ligne de commande, parce que nous adorons ça !  
-<img loading="lazy" src="https://media.giphy.com/media/lCbSAbRrFEfkY/giphy.gif" alt="" width="429" height="333" />
+![](https://media.giphy.com/media/lCbSAbRrFEfkY/giphy.gif)  
 ```generic
 # création d'un projet web vide.
 dotnet new web --output TutoGraphQL
@@ -202,7 +202,7 @@ namespace WebApiGraphQl.RequetesGraph
 }
 ```
 
-J’exposse 2 méthodes pour interroger les données.  
+J’expose 2 méthodes pour interroger les données.  
 * `GetPersonnesAsync()` retourne l’ensemble des personnes, et il a les attributs `[UseSorting]` qui permet d’indique un classement ([doc Sorting](https://chillicream.com/docs/hotchocolate/fetching-data/sorting)), et `[UseFiltering]` qui permet de filtrer ([doc Filtering](https://chillicream.com/docs/hotchocolate/fetching-data/filtering)).  
 * La 2eme méthode donne une personne en fonction de l’id passé en paramètre.  
 ### Configuration du serveur
@@ -230,7 +230,7 @@ app.Run();
 ## Testons l’application
 
 En exécutant le code, ou en allant sur le live, vous aurez l’IDE Banana Cake Pop. Cet IDE permet de tester les requêtes GraphQL. Il y a un système d’intellisense (comme le montre l’image).  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/01_GraphQl_BananaHelpRequete.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/01_GraphQl_BananaHelpRequete.png)  
 
 Notre première requête (ci-dessous) récupère sur l’ensemble des personnes, leur id, nom et email. Je prends que ce dont j’ai besoin !  
 ```json
@@ -246,7 +246,7 @@ query{
 
 `personnesAsync`… Tient tient, mais c’est le nom de ma méthode dans mon resolver. Ok il manque le Get.   
 Nous avons comme résultat.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/02_GraphQl_Result.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/02_GraphQl_Result.png)  
 
 La 2eme requête est sur la même méthode, je veux que l’ID et le nom, et surtout utiliser un classement différent. Je veux que le classement soit faire sur le nom et de Z à A.   
 ```json
@@ -259,7 +259,7 @@ query{
 ```
 
 Comme cette méthode porte l’attribut `UseSorting`, cela me permet d’indiquer un ordre différent, et sur quelle propriété.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/03_GraphQl_ResultSorting.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/03_GraphQl_ResultSorting.png)  
 
 Maintenant, je veux avoir la liste des amis d’une seule personne en particulier.  
 ```json
@@ -277,7 +277,7 @@ query{
 `personneById` ! Quand je vous disais que ce sont les mêmes noms que le resolver ! Vous voyez comment passer un paramètre à la requête. Maintenant, j’indique que je veux que la propriété `friends`, et que l’id et le nom des amis.  
 Pas d’image pour celle-là, je vous laisse l’essayer.  
 Comme cette méthode n’a pas d’attribut `Sorting`, l’intellisense ne propose pas `order`, comme avec la méthode `friendsById.`  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/04_GraphQl_Intellisense.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/Decouvertes/GraphQL/04_GraphQl_Intellisense.png)  
 
 J’ai fait une méthode qui prend en paramètre l’id d’une personne, mais j’aurais pu utiliser un filtre. La méthode personneAsync a comme autre attribut `UseFiltering`, ce qui permet d’indiquer à la requête un filtre. Voici la requête qui donnera le même résultat. (Voir la doc sur le [filtering de ChilliCream](https://chillicream.com/docs/hotchocolate/fetching-data/filtering))  
 ```json
@@ -294,4 +294,3 @@ C’est le petit mot clé `eq` qui fait tout 😉
 
 D’autres packages nuget permettent d’intégrer GraphQL avec MongoDb, EntityFramework, Neo4J, … ([Integration](https://chillicream.com/docs/hotchocolate/integrations)).   
 Voilà fini pour cette découverte, il reste encore tellement de chose à voir, (les mutations, ajout/suppression/update des données), mais je vous laisse découvrir ce merveilleux outil.  
-
