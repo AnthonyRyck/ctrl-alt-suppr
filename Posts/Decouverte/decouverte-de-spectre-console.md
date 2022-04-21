@@ -1,10 +1,8 @@
-
+# Découverte de Spectre.Console
 ## Qu’est-ce que Spectre.Console ?
 
 C’est une librairie qui permet de faire des projets `Console` bien plus… Bling Bling.   
-<img src="https://spectreconsole.net/assets/images/example.png" alt="" />
-  
-*Image de spectreconsole.net*  
+![Image de spectreconsole.net](https://spectreconsole.net/assets/images/example.png)
 **[LINK TO VIDEO](https://spectreconsole.net/assets/images/table.webm)**
 
 Le projet est OpenSource sur [GitHub : Spectre.Console](https://www.nuget.org/packages/Spectre.Console/0.43.1-preview.0.43) et toute la documentation est sur [spectreconsole.net](https://spectreconsole.net/). Pour cette découverte, nous allons faire un projet console pour ce blog (ctrl-alt-suppr).  
@@ -19,7 +17,7 @@ dotnet add .\ConsoleBlingBling package Spectre.Console.ImageSharp
 #### Le logo
 
 Au lancement de l’application, j’aimerai afficher le « logo » du blog, ou du moins ce qui s’en rapproche le plus. J’ai fait cette image :  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/dotNet6/ConsoleBlingBling/logo.jpg" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/dotNet6/ConsoleBlingBling/logo.jpg)
 
 Vous allez me dire :   
 *« Mais dans une application console, on ne peut pas afficher d’image »*  
@@ -101,7 +99,7 @@ AnsiConsole.Write(slogan);
 
 `FigleText` ([doc spectre](https://spectreconsole.net/widgets/figlet)) permet de convertir le string passé en paramètre en `FIGlet` ([définition](https://fr.wikipedia.org/wiki/FIGlet)).   
 Voilà ce que ça donne :  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/ImgBlog/Spectre/01-Spectre_LogoSousTitre.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/master/src/ImgBlog/Spectre/01-Spectre_LogoSousTitre.png)
 
 Le fond avec les étoiles est mon background de mon Windows Terminal. Dans les [best-practices](https://spectreconsole.net/best-practices) de Spectre, il indique que le rendu peut être « gâché » (*c’est ma traduction 🙂*) en fonction de comment est configuré la sortie de l’utilisateur. Si vous mettez une grande image, et que l’utilisateur a une fenêtre de console toute petite, ça va sortir un résultat très différent de ce que vous vous attendiez.   
 Maintenant que j’ai mis le logo et le slogan, je veux que cette application récupère les 10 derniers articles pour les afficher dans un menu.  
@@ -128,7 +126,7 @@ await AnsiConsole.Status()
 				// Pour avoir le temps de voir le "waiting".
 				await Task.Delay(5000);
 				AnsiConsole.MarkupLine(":check_mark: Terminé " + Emoji.Known.CheckMark);
-    		});</PostWordPress></PostWordPress></PostWordPress>
+    		});
 ```
 
 L’animation sera affichée jusqu’à la fin du `StartAsync()`. Il est possible de choisir le type d’animation, avec l’option [Spinner](https://spectreconsole.net/appendix/spinners) (`ctx.Spinner(Spinner.Known.Aesthetic);`). Dans mon cas j’ai mis : `Aesthetic`, mais vous trouverez tous les [exemples ici](https://jsfiddle.net/sindresorhus/2eLtsbey/embedded/result/).  
@@ -205,11 +203,11 @@ void ShowPosts()
 	}
 	AnsiConsole.MarkupLine("[green]posts[/] : pour réafficher la liste des articles.");
 	AnsiConsole.MarkupLine("[red]quit[/] : pour quitter.");
-}</string>
+}
 ```
 
 Qu’est ce qui est important.  
-* <code data-enlighter-language="csharp" class="EnlighterJSRAW">selection = AnsiConsole.Ask<string>("Quel est votre choix ?");</code>  
+* `selection = AnsiConsole.Ask<string>("Quel est votre choix ?");`  
 Il remplace `Console.ReadLine();` ou `Console.ReadKey();`, et la sortie peut être directement typé.  
 * `AnsiConsole.MarkupLine("See you soon " + Emoji.Known.OkHand);`  
 [MarkupLine](https://spectreconsole.net/markup) équivaut à `AnsiConsole.Write(new Markup("....."));` Je vous laisse lire la doc pour lui, car il permet de changer de couleur le texte, souligner, mettre des [emojis](https://spectreconsole.net/appendix/emojis),… enfin c’est lui qui rend la vie plus be  
@@ -228,4 +226,3 @@ dotnet script https://raw.githubusercontent.com/AnthonyRyck/CodesPourDevTo/maste
 ```
 
 Voilà, maintenant je suis un adepte de ces librairies, je pense même refaire certains de mes projets avec 😉 Il y a encore tellement à découvrir (les tableaux, les commandes,…), mais je vous laisse faire vos propres tests.  
-
