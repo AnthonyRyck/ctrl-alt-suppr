@@ -1,4 +1,4 @@
-
+# Tips & Tricks – Du script en C#
 
 Le script en C# ne date pas de hier (*en 2011, pour [les nostalgiques](https://docs.microsoft.com/fr-fr/archive/blogs/cdndevs/adding-c-scripting-to-your-development-arsenal-part-1)*), et dans ce post je vais présenter l’outil : `dotnet-script` ([site du projet](https://github.com/filipw/dotnet-script)).   
 
@@ -20,7 +20,7 @@ Faire la commande dans un répertoire :
 ```generic
 dotnet-script init
 ```
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/01-dotnetscript.png)
 
 Ça va générer 3 fichiers : `launch.json`, `main.csx` et `omnisharp.json`. L’extension des fichiers de script C# est le `csx`, afin de bien montrer la différence. Le fichier `omnisharp.json` contient des paramètres tels que le framework cible et autorise ou non les références de nuget.  
 ```json
@@ -102,7 +102,7 @@ SautDeLigne();
 ```
 
 Là j’ai utilisé des méthodes `static`, mais ça peut être des `class` pour définir des objets. Tout le champ des possibilités du C# est utilisable.  
-<img src="https://media.giphy.com/media/3o84sq21TxDH6PyYms/giphy.gif" alt="" />
+![](https://media.giphy.com/media/3o84sq21TxDH6PyYms/giphy.gif)
 #### Utilisation de Nuget
 
 C’est bien beau d’ajouter du code dans son script, mais bon je ne vais pas tout réinventer, je veux pouvoir utiliser des packages sur nuget… ou… de nuget ! (***sur** ou **de** ?*)   
@@ -112,10 +112,10 @@ Et c’est possible ! C’est là que le script devient une machine de guerre. P
 ```
 
 On retrouve la commande sur le site de nuget pour un package.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/05-dotnetscript-nuget.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/05-dotnetscript-nuget.png)
 
 **Note** : A chaque ajout d’un package avec la commande, il faut redémarrer l’extension Omnisharp (C#), pour que l’intellisense soit prise en charge pour l’ajout. (CTRL+SHIFT+P –> omnisharp)  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/04-dotnetscript-Omnisharp-Reset.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/04-dotnetscript-Omnisharp-Reset.png)
 
 Je vais prendre un exemple de package : [AlienFruit.FluentConsole.AsciiArt](https://www.nuget.org/packages/AlienFruit.FluentConsole.AsciiArt/). Il permet de faire du ACSII Art. Ajoutons tout ça dans le script `main.csx`, et je mets le script au complet.  
 ```csharp
@@ -151,12 +151,12 @@ Info("Voilà, à vos Script !");
 ```
 
 Il faut que les instructions `#load` et `#r` soient **TOUJOURS** en haut du script.  
-<img src="https://media.giphy.com/media/YAlhwn67KT76E/giphy.gif" alt="" />
+![](https://media.giphy.com/media/YAlhwn67KT76E/giphy.gif)
 
 **Attention** : Si dans Visual Studio Code après avoir ajouté un package nuget, VS vous met tout en erreur, j’ai eu la même chose. C’est un problème de version entre `dotnet-script` et `Omnisharp` ([issue sur Github](https://github.com/OmniSharp/omnisharp-roslyn/issues/2020)).   
 Pour cela il faut modifier le fichier de config de l’extension.  
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/02-dotnetscript-Omnisharp.png" alt="" />
-<img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/03-dotnetscript-Omnisharp.png" alt="" />
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/02-dotnetscript-Omnisharp.png)
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/dotNetScript/03-dotnetscript-Omnisharp.png)
 
 Il faut ajouter à la fin du fichier de config :  
 ```json
@@ -233,4 +233,3 @@ Je vous invite à lire le post : [NuGet ContentFiles Demytified](https://devblog
 
 Depuis le .NET Core, il est possible de faire du scripting sur toutes les plateformes, pourquoi s’en privé ? C’est utilisé sur Azure : [Azure Function](https://docs.microsoft.com/fr-fr/azure/azure-functions/functions-reference-csharp).  
 Donc à vos scripts 😉  
-
