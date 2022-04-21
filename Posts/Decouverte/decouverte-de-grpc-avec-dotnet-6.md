@@ -1,11 +1,11 @@
-
-# Découverte de gRPC avec dotNet 6
-
 Dans cet article je vais montrer comment mettre en place le framework gRPC dans une application (serveur et client).  
 Avec Visual Studio 2022 ou par la commande dotnet, il est possible de créer un projet gRPC.  
-<figure class="wp-block-image size-large"><img src="https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-01-CreationProjet.png" alt=""/></figure>
+
+![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-01-CreationProjet.png)  
+
 Mais pour cet article je vais partir d’une application [from scratch](https://www.from-scratch.fr/definition/). Je veux aussi revenir à la base, faire toute la création du projet en ligne de commande. Nous sommes souvent très/trop aidés (*moi le premier*) avec des menus contextuels pour ajouter un package nuget, une référence à un projet, mais sait-on encore le faire sans ?  
 Tout le code source « final » se trouve sur [GitHub](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/TutoGrpc).  
+
 ## Qu’est-ce que gRPC ?
 
 gRPC est un framework initialement développé par Google en 2015. Je ne vais pas vous vendre du rêve en recopiant le site de [grpc.io](https://www.grpc.io/docs/what-is-grpc/introduction/) pour vous donner une bonne explication, je vous laisse aller la voir…  
@@ -24,9 +24,11 @@ Je reprends les mots de la doc de Microsoft.
 * *Les microservices légers où l’efficacité est essentielle.*  
 * *Les systèmes polyglottes où plusieurs langages sont nécessaires au développement.*  
 * *Les services en temps réel de point à point qui doivent gérer des demandes ou réponses de streaming.*  
+
 ## Le projet
 
 Ce que nous allons créer est un serveur Asp.Net Core qui sera possible d’interroger pour avoir la liste de tous les utilisateurs ou avoir un utilisateur par son id. Pour ne pas monter de base de données et rester dans quelque chose de simple, j’ai mis un fichier json contenant plus de 5000 fiches utilisateurs. Voici un exemple d’utilisateur :  
+
 ```json
 {
     "_id": "61b6c9ceb0b039f7477bedef",
@@ -74,12 +76,13 @@ Ce que nous allons créer est un serveur Asp.Net Core qui sera possible d’inte
     "favoriteFruit": "apple"
   }
 ```
+
 ## Création du serveur gRPC
 
 Première partie, nous allons créer notre serveur.  
 Créer un répertoire pour accueillir le code source.  
-<code>mkdir TutoGrpc  
-cd TutoGrpc</code>  
+`mkdir TutoGrpc  `
+`cd TutoGrpc`  
 Je l’ai dit, on part de la base !  
 Une fois dans le répertoire, il faut créer notre fichier sln.  
 `dotnet new sln`  
@@ -91,10 +94,10 @@ Crée un nouveau projet avec le template **web** et avec l’argument **-o** (*o
 Ajoutons ce projet dans notre fichier de solution.  
 `dotnet sln add .\ServerGrpc\`   – doc [dotnet sln add](https://docs.microsoft.com/fr-fr/dotnet/core/tools/dotnet-sln#add)  
 Nous allons avoir besoin des packages nuget pour gRPC, ajoutons-les à notre projet ServerGrpc.  
-<code>cd ServerGrpc  
+`cd ServerGrpc`  
 dotnet add package Grpc.AspNetCore</code>    – doc [dotnet add package](https://docs.microsoft.com/fr-fr/dotnet/core/tools/dotnet-add-package)  
 Je ne mets pas de nom de projet car je suis dans le répertoire du projet ou je veux ajouter les packages.  
-[Grpc.AspNet.Core](https://www.nuget.org/packages/Grpc.AspNetCore/) est un meta package, ça veut qu’il contient plusieurs packages (*pour la dernière version*) :  
+[Grpc.AspNet.Core](https://www.nuget.org/packages/Grpc.AspNetCore/) est un meta package, ça veut qu’il contienne plusieurs packages (*pour la dernière version*) :  
 * [Google.Protobuf](https://www.nuget.org/packages/Google.Protobuf/) (>= 3.18.0)  
 * [Grpc.AspNetCore.Server.ClientFactory](https://www.nuget.org/packages/Grpc.AspNetCore.Server.ClientFactory/) (>= 2.41.0)  
 * [Grpc.Tools](https://www.nuget.org/packages/Grpc.Tools/) (>= 2.41.0)  
@@ -102,6 +105,7 @@ Je ne mets pas de nom de projet car je suis dans le répertoire du projet ou je 
 Revenir en arrière `cd..` pour être dans le répertoire où se trouve le fichier `sln`, et faire :  
 `dotnet build`. C’est pour être sûr que toutes les dépendances soient bien chargées.  
 Maintenant on peut ouvrir notre éditeur de code 😉  
+
 ## Du Code !
 ### Partie Serveur
 
@@ -158,7 +162,7 @@ public class DataService : IDataService
     }
 
     #endregion
-}</User></User></User></User></User>
+}
 ```
 
 Juste pour info, voici l’entité `User` et `Friend`.  
@@ -206,6 +210,7 @@ Maintenant il faut créer le services gRPC. Pour ce faire il faut créer un fich
 ![](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-02-Workflow.png)
 
 Créer un répertoire `Protos` dans le projet, et créer un fichier `collectionusers.proto`. Voici le code :  
+
 ```generic
 // déclare la version de la syntax
 syntax = "proto3";
@@ -289,27 +294,30 @@ Comme indiqué c’est une option, ça permet de donner un nom de namespace choi
 * `service Utilisateurs`  
 Déclaration d’un service qui va s’appeler Utilisateurs. Il contiendra les différentes méthodes que le service offrira via les **rpc**.  
 Voir [la doc](https://developers.google.com/protocol-buffers/docs/proto3#services) pour les services.  
+
 ### rpc
 
 Là ça devient intéressant. Comme dit plus haut, dans le service il faut déclarer les méthodes, et c’est avec le mot clé `rpc`. Je vais prendre un exemple :  
 `rpc GetUserById (UserIdRequest) returns (UserResponse);`  
 `GetUserById` : Nom de la méthode et il prend en paramètre un **message** `UserIdRequest`, et cette méthode retourne (`returns`) un autre **message** `UserResponse`.  
+
 ### message
 
 Pour le C#, les messages sont l’objet principal de transfert de données dans Protobuf. Elles sont conceptuellement similaires aux classes .NET. Je vais prendre l’exemple avec :  
-<code>message UserResponse {  
-     string id = 1;  
-     int32 index = 2;  
-     ....</code>  
- `    repeated string tags = 19;`  
- `    repeated Friends friends = 20;`  
- `     ` `.... }`   
+`message UserResponse {`  
+`     string id = 1;`  
+`     int32 index = 2;`  
+`     ....`  
+`    repeated string tags = 19;`  
+`    repeated Friends friends = 20;`  
+`     .... }`   
 
 A l’intérieur du message, il faut déclarer les propriétés ET son « ordre de passage ». Comme vous pouvez le voir, chaque champ de la définition du message a un numéro unique. Ces numéros sont utilisés pour identifier les champs dans le format binaire du message et ne doivent pas être modifiés une fois que le type de message est utilisé.   
 **Mode Advanced** : Notez que les numéros de champ compris entre 1 et 15 prennent un octet à coder, y compris le numéro de champ et le type de champ (vous pouvez en savoir plus à ce sujet dans Protocol Buffer Encoding). Les numéros de champ compris entre 16 et 2047 prennent deux octets. Vous devez donc réserver les numéros 1 à 15 pour les éléments de message très fréquents. N’oubliez pas de laisser de la place aux éléments fréquents qui pourraient être ajoutés à l’avenir. Voir la doc pour plus d’info sur [la structure du message](https://developers.google.com/protocol-buffers/docs/encoding#structure).  
 
 **Attention** : Le code est généré à la compilation du projet ! Donc avoir un projet compilable, quand vous ajoutez un service, une méthode ou un message.  
 ![Non rien à voir, ça ne sent pas le vécu…](https://media.giphy.com/media/3o7btUg31OCi0NXdkY/giphy.gif)
+
 #### Les types pour les propriétés
 
 Comme protobuf a son « langage », il a sa manière de déclarer ses types. Dans l’exemple, j’ai fait exprès de choisir des types simples (string, int32,…) et des types plus complexes. Pour les types simples je vous laisse aller voir [la doc Microsoft](https://docs.microsoft.com/fr-fr/aspnet/core/grpc/protobuf?view=aspnetcore-6.0#scalar-value-types) pour avoir la correspondance entre les types protobuf et les types .Net. Il y a aussi la doc google pour [tous les langages](https://developers.google.com/protocol-buffers/docs/proto3#scalar).   
@@ -330,6 +338,7 @@ Pour une énumération voir la [doc Google](https://developers.google.com/protoc
 Une fois les services **rpc** déclarés, tous les **message** (request et response) déclarés et définis, il ne faut surtout pas oublier de compiler le projet, pour que les outils (Grpc.Tools) puissent générer le code.   
 Pour info: le code généré se trouve dans `...\ServerGrpc\obj\Debug\net6.0\Protos`  
 Dans le répertoire Service, il faut ajouter une nouvelle `class` qui sera notre service qui va répondre aux différentes demandes. En voici le code.  
+
 ```csharp
 using Grpc.Core;
 
@@ -413,7 +422,7 @@ public class UtilisateursService : Utilisateurs.UtilisateursBase
 
         return userReponse;
     }
-}</AllUsersResponse></UserResponse></CountUser>
+}
 ```
 
 Choses importantes :  
@@ -454,13 +463,14 @@ builder.WebHost.ConfigureKestrel((context, options) =>
 
 [...]
 
-app.MapGrpcService<UtilisateursService>();</UtilisateursService>
+app.MapGrpcService<UtilisateursService>();
 ```
 
 Je configure le serveur en « dur » pour qu’il écoute sur le port 5001, et qu’il utilise le protocole `Http1AndHttp2AndHttp3`.  
 Pour utiliser le HTTP3, il faut que la connexion soit sécurisée. J’ai exporté le certificat de développement. (Voir la fin de l’article,  ***Note pour certificat***, pour ajouter le certificat à votre machine, sinon Exception… (⌣̩̩́_⌣̩̩̀)  ).  
 
 Pour voir la différence entre gRPC et un appel « classique » à un `controller`, j’ai créé ce controller.  
+
 ```csharp
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -503,7 +513,6 @@ namespace ServerGrpc.Controllers
         }
     }
 }
-</User>
 ```
 
 Enfin je mets toute la configuration de `Program.cs` (gRPC + controller).  
@@ -548,6 +557,7 @@ app.UseEndpoints(endpoints =>
 
 app.Run();</UtilisateursService></IDataService,>
 ```
+
 ### Partie Client
 
 Ajout d’une application cliente pour utiliser notre service gRPC.  
@@ -567,6 +577,7 @@ Dans l’exemple j’ai copié le fichier proto.
 
 J’ai fait ça c’est pour changer une ligne : `option csharp_namespace = "ClientGrpc";` C’était pour montrer que le namespace est bien pris en compte lors de la génération de code.  
 Une fois le fichier proto copié, il faut ajouter la ligne dans le `csproj` en le déclarant comme `GrpcServices="Client"`.  
+
 ```xml
 <ItemGroup>
 	<Protobuf Include="Protos\collectionusers.proto" GrpcServices="Client"></Protobuf>
@@ -609,11 +620,12 @@ using (Stream reponse = await resultController.Content.ReadAsStreamAsync())
 {
     var tousLesUtilisateurs = JsonSerializer.DeserializeAsync< /><User>>(reponse);
     $"Il y a {tousLesUtilisateurs.Result.Count} utilisateurs".ToConsoleResult();
-}</User>
+}
 ```
 
 Je l’ai ajouté car avec gGRPC une fois la réception terminée, nous travaillons déjà en objet.  
 `AllUsersResponse allClients = await client.GetAllAsync(empty);`  
+
 ## Pour conclure
 
 C’est un poste de découverte, c’était histoire de dégrossir/démystifier se framework.   
@@ -621,11 +633,17 @@ C’est un poste de découverte, c’était histoire de dégrossir/démystifier 
 
 Pour que la machine ne lève pas d’exception entre votre machine et le serveur, il faut importer le certificat que j’ai exporté ([Self-Signed Certificate](https://docs.microsoft.com/en-us/dotnet/core/additional-tools/self-signed-certificates-guide#with-dotnet-dev-certs)). C’est un certificat pour « localhost », et vous avez surement déjà vos certificats, du coup il y aura un « désaccord » entre celui fourni dans l’application et ceux de votre machine.  
 Clic droit sur le **.pfx**.  
-![ Installer PFX.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif01.png)
-![Choisir : Ordinateur local.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif02.png)
-![Récap du fichier](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif03.png)
-![Indiquer le mot de passe, comme affiché.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif04.png)
-![Choisir cette option.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif05.png)
-![Placer dans « Autorités de certification racines de confiance »](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif06.png)
-![Certificat ajouté.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif07.png)
-
+  
+![ Installer PFX.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif01.png)  
+  
+![Choisir : Ordinateur local.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif02.png)  
+  
+![Récap du fichier](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif03.png)  
+  
+![Indiquer le mot de passe, comme affiché.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif04.png)  
+  
+![Choisir cette option.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif05.png)  
+  
+![Placer dans « Autorités de certification racines de confiance »](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif06.png)  
+  
+![Certificat ajouté.](https://raw.githubusercontent.com/AnthonyRyck/ctrl-alt-suppr/main/ImgBlog/gRPC/Grpc-05-Certif07.png)  
