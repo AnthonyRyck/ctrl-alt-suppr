@@ -1,6 +1,4 @@
-# Entity Framework Core : Code First
-
-Dans mon premier post sur EF Core, j’ai montré comment installer EF Core en ligne de commande et faire du [Database First](https://www.ctrl-alt-suppr.dev/2022/01/21/entity-framework-core-database-first/) (*générer du code à partir d’une base de donnée*s). Dans ce post, je vais montrer comment générer une base de données à partir du code, c’est le **Code First**. Le code source du projet d’exemple est sur [GitHub](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/TutoEfCoreCodeFirst).  
+Dans mon premier post sur EF Core, j’ai montré comment installer EF Core en ligne de commande et faire du [Database First](https://www.ctrl-alt-suppr.dev/2022/01/21/entity-framework-core-database-first/) (*générer du code à partir d’une base de données*). Dans ce post, je vais montrer comment générer une base de données à partir du code, c’est le **Code First**. Le code source du projet d’exemple est sur [GitHub](https://github.com/AnthonyRyck/CodesPourDevTo/tree/master/src/dotNet6/TutoEfCoreCodeFirst).  
 
 ## Préparation
 
@@ -254,7 +252,7 @@ Il ne reste plus qu’à ajouter dans `Program.cs`, le code pour faire la connex
 ```csharp
 // Add Application Db Context options
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-			options.UseSqlite(@"Data Source=TutoCodeFirst.db"));</ApplicationDbContext>
+			options.UseSqlite(@"Data Source=TutoCodeFirst.db"));
 ```
 ## Génération de la base
 
@@ -297,7 +295,7 @@ Voici un exemple de code généré pour SQLite et pour MySQL, juste sur la table
 				constraints: table =>
 				{
 					table.PrimaryKey("PK_Clients", x => x.Id);
-				});</int></string></string></string>
+				});
 ```
 ```csharp
 migrationBuilder.CreateTable(
@@ -316,7 +314,7 @@ migrationBuilder.CreateTable(
 		{
 			table.PrimaryKey("PK_Clients", x => x.Id);
 		})
-		.Annotation("MySql:CharSet", "utf8mb4");</int></string></string></string>
+		.Annotation("MySql:CharSet", "utf8mb4");
 ```
 
 C’est ce qui est génial avec EF Core CodeFirst, sans changer code, nous ne dépendons plus d’une base.  
@@ -415,4 +413,4 @@ Done.
 ```
 
 La création de la base SQLite est faite à la racine du projet et se nomme : `TutoCodeFirst.db`.  
-Voilà c’était pour démystifier Entity Framework Core : Code First.  
+Voilà c’était pour démystifier Entity Framework Core : Code First.
