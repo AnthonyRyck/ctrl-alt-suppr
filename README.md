@@ -24,6 +24,6 @@ Sauvegarde de mes articles
 16/02/22 [GitHub Actions – Créer une Release](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Github/github-actions-creer-une-release.md)  
 
 ## Tips & Tricks
-24/11/21 [Tips & Trick – Tuning Windows Terminal](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Tips%26Tricks/tips-%26-tricks-%20Tuning%20Windows%20Terminal.md)
-28/02/22 [Tips & Tricks - Du script en C#](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Tips%26Tricks/tips-tricks-du-script-en-c.md)  
+24/11/21 [Tips & Trick – Tuning Windows Terminal](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Tips%26Tricks/tips-%26-tricks-%20Tuning%20Windows%20Terminal.md)  
 04/02/22 [Tips & Tricks – Instruction de compilation](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Tips%26Tricks/tips-tricks-instruction-de-compilation.md)  
+28/02/22 [Tips & Tricks - Du script en C#](https://github.com/AnthonyRyck/ctrl-alt-suppr/blob/main/Posts/Tips%26Tricks/tips-tricks-du-script-en-c.md)  
